@@ -2,13 +2,18 @@
 
 /** Object */
 $myObject = new stdClass();
-// like arrays we cant do this for now
+
+# DE: für Objekte können wir echo nicht benutzen (Ausnahmen behandeln wir später)
+// EN: unlike arrays we cant do echo for objects (exceptions will be shown later)
 #echo $myObject;
 
-// but we can var_dump it
+# DE: aber wir können var_dump() nutzen
+// EN: but we can var_dump it
 var_dump($myObject);
 
-// lets give the object an property with a value
-// this is only to show the effect, in practise we should avoid doing it like this
+# DE: lasst uns dem Objekt eine Eigenschaft geben (zu Testzwecken)
+# DE: in der Praxis sollten Eigenschaften nicht direkt gesetzt werden
+// EN: lets give the object an property with a value
+// EN: this is only to show the effect, in practise we should avoid doing it like this
 $myObject->foo = 1;
 var_dump($myObject);
